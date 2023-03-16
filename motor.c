@@ -5,16 +5,16 @@
 void MOTOR_setup(void)
 {
     // LAN1
-    _TRISA2 = 0;
-    _TRISA3 = 0;
-    _TRISB5 = 0;
-    _TRISA4 = 0;
+    _TRISB6 = 0;
+    _TRISB7 = 0;
+    _TRISB2 = 0;
+    _TRISB4 = 0;
 
     // LAN2
-    _TRISA1 = 0;
-    _TRISB2 = 0;
-    _TRISB13 = 0;
-    _TRISB3 = 0;
+    _TRISE4 = 0;
+    _TRISE5 = 0;
+    _TRISE6 = 0;
+    _TRISE7 = 0;
 
     return;
 }

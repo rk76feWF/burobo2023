@@ -21,14 +21,14 @@
 #define LED3_Toggle() LED3 ^= 1
 
 // LAN1
-#define M1S1 _LATA2
-#define M1S2 _LATA3
-#define M2S1 _LATB5
-#define M2S2 _LATA4
+#define M1S1 _LATB6
+#define M1S2 _LATB7
+#define M2S1 _LATB2
+#define M2S2 _LATB4
 // LAN2
-#define M3S1 _LATA1
-#define M3S2 _LATB2
-#define M4S1 _LATB13
-#define M4S2 _LATB3
+#define M3S1 _LATE4
+#define M3S2 _LATE5
+#define M4S1 _LATE6
+#define M4S2 _LATE7
 
 #endif /* PIN_H */
