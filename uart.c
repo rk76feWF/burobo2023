@@ -16,10 +16,10 @@ void UART_setup(void)
 
 void U1_setup(long BRG)
 {
-    _TRISB9 = 0; // TX pin
-    _TRISB8 = 1; // RX pin
-    _RP9R = 3;   // TX pin
-    _U1RXR = 8;  // RX pin
+    _TRISD11 = 0; // TX pin
+    _TRISD0 = 1;  // RX pin
+    _RP12R = 3;   // TX pin
+    _U1RXR = 11;  // RX pin
 
     U1MODE = 0x0000;
     U1STA = 0x0000;
@@ -38,10 +38,10 @@ void U1_setup(long BRG)
 
 void U2_setup(long BRG)
 {
-    _TRISB15 = 0; // TX pin
-    _TRISB14 = 1; // RX pin
-    _RP15R = 5;   // TX pin
-    _U2RXR = 14;  // RX pin
+    _TRISD8 = 0; // TX pin
+    _TRISD9 = 1; // RX pin
+    _RP2R = 5;   // TX pin
+    _U2RXR = 4;  // RX pin
 
     U2MODE = 0x0000;
     U2STA = 0x0000;

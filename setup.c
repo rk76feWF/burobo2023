@@ -22,7 +22,7 @@ void setup(void)
     _TRISB13 = 0; // LED2
     _TRISB12 = 0; // LED3
 
-    // UART_setup();
+    UART_setup();
     // TIMER_setup();
     MOTOR_setup();
     // PWM_setup();
