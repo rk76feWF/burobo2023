@@ -16,6 +16,18 @@ void MOTOR_setup(void)
     _TRISE6 = 0;
     _TRISE7 = 0;
 
+    // LAN3
+    _TRISE0 = 0;
+    _TRISE1 = 0;
+    _TRISE2 = 0;
+    _TRISE3 = 0;
+
+    // LAN4
+    _TRISD6 = 0;
+    _TRISD7 = 0;
+    _TRISF0 = 0;
+    _TRISF1 = 0;
+
     return;
 }
 
@@ -56,6 +68,27 @@ int motor(int number, double velocity)
         M4S1 = dir1;
         M4S2 = dir2;
         OC4R = fabs(velocity) * OC4RS;
+        break;
+
+    case 5:
+        M5S1 = dir1;
+        M5S2 = dir2;
+        OC5R = fabs(velocity) * OC5RS;
+        break;
+    case 6:
+        M6S1 = dir1;
+        M6S2 = dir2;
+        OC6R = fabs(velocity) * OC6RS;
+        break;
+    case 7:
+        M7S1 = dir1;
+        M7S2 = dir2;
+        OC7R = fabs(velocity) * OC7RS;
+        break;
+    case 8:
+        M8S1 = dir1;
+        M8S2 = dir2;
+        OC8R = fabs(velocity) * OC8RS;
         break;
     default:
         return -2;

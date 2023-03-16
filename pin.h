@@ -31,4 +31,16 @@
 #define M4S1 _LATE6
 #define M4S2 _LATE7
 
+// LAN3
+#define M5S1 _LATE0
+#define M5S2 _LATE1
+#define M6S1 _LATE2
+#define M6S2 _LATE3
+
+// LAN4
+#define M7S1 _LATD6
+#define M7S2 _LATD7
+#define M8S1 _LATF0
+#define M8S2 _LATF1
+
 #endif /* PIN_H */
