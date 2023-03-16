@@ -51,7 +51,7 @@ void __attribute__((__interrupt__, no_auto_psv)) _T2Interrupt(void)
     }
     else
     {
-        LED_SetLow();
+        LED2_SetLow();
         ++counter;
     }
 
