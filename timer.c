@@ -46,7 +46,7 @@ void __attribute__((__interrupt__, no_auto_psv)) _T2Interrupt(void)
     // タイムアウト処理
     if (counter > 100)
     {
-        LED_SetHigh();
+        LED2_SetHigh();
         ps3.connected = false;
     }
     else

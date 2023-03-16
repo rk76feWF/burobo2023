@@ -8,11 +8,17 @@
 #ifndef PIN_H
 #define PIN_H
 
-// LED
-#define LED _LATA0
-#define LED_SetLow() LED = 0
-#define LED_SetHigh() LED = 1
-#define LED_Toggle() LED ^= 1
+// LED2
+#define LED2 _LATB13
+#define LED2_SetLow() LED2 = 0
+#define LED2_SetHigh() LED2 = 1
+#define LED2_Toggle() LED2 ^= 1
+
+// LED3
+#define LED3 _LATB12
+#define LED3_SetLow() LED3 = 0
+#define LED3_SetHigh() LED3 = 1
+#define LED3_Toggle() LED3 ^= 1
 
 // LAN1
 #define M1S1 _LATA2
