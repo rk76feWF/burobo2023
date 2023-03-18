@@ -73,14 +73,23 @@ void __attribute__((__interrupt__, no_auto_psv)) _U2RXInterrupt(void)
     _U2RXIF = 0;
 }
 
-void prints(char *str)
+void prints(const char *format, ...)
 {
-    while (*str != '\0')
+    va_list args;
+    va_start(args, format);
+
+    int length = vsnprintf(NULL, 0, format, args) + 1;
+    char buffer[length];
+
+    vsnprintf(buffer, length, format, args);
+
+    for (int i = 0; i < length - 1; i++)
     {
         while (U2STAbits.TRMT == 0)
             ;
-        U2TXREG = *str++;
+        U2TXREG = buffer[i];
     }
 
+    va_end(args);
     return;
 }

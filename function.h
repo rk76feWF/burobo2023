@@ -11,7 +11,7 @@
 void setup(void);
 
 void UART_setup(void);
-void prints(char *);
+void prints(const char *, ...);
 
 void TIMER_setup(void);
 
