@@ -8,10 +8,10 @@ void move(ps3_t *ps3)
     if (ps3->connected)
         polar_to_omni4_duty(ps3, duty);
 
-    motor(1, duty[0]);
-    motor(2, duty[1]);
-    motor(3, duty[2]);
-    motor(4, duty[3]);
+    motor_set(1, duty[0]);
+    motor_set(2, duty[1]);
+    motor_set(3, duty[2]);
+    motor_set(4, duty[3]);
 
     return;
 }

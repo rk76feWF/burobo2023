@@ -31,7 +31,7 @@ void MOTOR_setup(void)
     return;
 }
 
-int motor(int number, double velocity)
+int motor_set(int number, double velocity)
 {
     bool dir1, dir2;
 
@@ -95,4 +95,18 @@ int motor(int number, double velocity)
     }
 
     return 0;
+}
+
+void motor_stop(void)
+{
+    motor_set(1, 0.0);
+    motor_set(2, 0.0);
+    motor_set(3, 0.0);
+    motor_set(4, 0.0);
+    motor_set(5, 0.0);
+    motor_set(6, 0.0);
+    motor_set(7, 0.0);
+    motor_set(8, 0.0);
+
+    return;
 }

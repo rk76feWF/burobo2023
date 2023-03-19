@@ -10,7 +10,10 @@ int main(void)
 
     while (1)
     {
-        move(&ps3);
+        if (ps3.connected)
+            move(&ps3);
+        else
+            motor_stop();
     }
 
     return -1;

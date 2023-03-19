@@ -17,7 +17,8 @@ void TIMER_setup(void);
 
 void PWM_setup(void);
 void MOTOR_setup(void);
-int motor(int, double);
+int motor_set(int, double);
+void motor_stop(void);
 void polar_to_omni4_duty(ps3_t *, double *);
 void move(ps3_t *ps3);
 
