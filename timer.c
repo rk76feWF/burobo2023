@@ -8,7 +8,7 @@ static inline unsigned short int get_tckps(int prescaler);
 extern queue_t u1;
 extern ps3_t ps3;
 
-void TIMER_setup(void)
+void timer_setup(void)
 {
     // (1/16000000) * prescaler * period
 

@@ -2,7 +2,7 @@
 #include "user.h"
 #include <math.h>
 
-void MOTOR_setup(void)
+void motor_setup(void)
 {
     // LAN1
     _TRISB6 = 0;
